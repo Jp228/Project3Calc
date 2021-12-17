@@ -10,5 +10,6 @@ pytest  --pylint --cov
 setup.py is a config file for pytest
 
 
-CSV
-![app/static/images/CSV.png](app/static/images/CSV.png)
+
+Link to video of website
+https://drive.google.com/file/d/1Ddca09oLBqYpOkzVAkHb615lR4WJLoLy/view?usp=sharing
