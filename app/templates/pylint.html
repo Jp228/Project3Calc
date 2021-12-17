@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+        .important { color: #336699; }
+    </style>
+
+{% endblock %}
+{% block content %}
+    <body>
+
+<h3 class = "space"> What is pylint? </h3>
+<p class = "indent">Pylint is a tool used to check errors and warnings in python. Pylint tries to enforce a coding standard and looks for
+  code smells. it can recommend suggestions about how particular blocks can be refactored. Pylint will display a number
+  of messages as it analyzes the code. </p>
+<h3 class = "space">Installing</h3>
+<p class = "indent">A user can install pylint with a simple command → pip install pylint</p>
+<h3 class = "space">Running pylint</h3>
+<p class = "indent">Pylint checks for errors, tries to enforce a coding standard, and tries to enforce a coding style. A user can do all
+  of these with commands listed below.</p>
+<ul>Getting a report</ul>
+<li class = "indent">Pylint filename.py</li>
+<ul>Getting Warning</ul>
+<li class = "indent">Pylint -rn filename.py</li>
+<ul>Getting errors</ul>
+<li class = "indent">Pylint -E filename.py</li>
+<ul>Running GUI</ul>
+<li class = "indent">pylint-gui</li>
+<p class = "indent">Pylint uses two types of extensions. To find a problem in the code, the first extension is checkers. Checkers can be
+  used to find errors in the code. Secondly, there is also the concept of transform plugin, which represents a way
+  through which the inference. A plugin is a module which should have a function register and takes the lint module as
+  input. So a basic hello-world plugin can be implemented as: </p>
+<p class = "indent">All of the default pylint checkers exist in pylint.checkers.Pylint tries hard to report as few false positives as
+  possible for errors, but it may be too verbose with warnings.</p>
+<h2 class="space">Glossary:</h2>
+<p class = "indent">Instantiation - the realization of a predefined object</p>
+<p class = "indent">Objects - the units of code that are data structure of a class</p>
+<p class = "indent">Class - just like a blueprint for creating objects </p>
+<p class = "indent">A namespace - group of related elements that each have a unique name or identifier for example a path of any file</p>
+<p class = "indent">Constructor- constructor is declared when a class is created</p>
+<p class = "indent">Fixture - a test class in a program is called fixture</p>
+<p class = "indent">Type hint - providing hints to function to only accept the given data type</p>
+<p class = "indent">Type cast - assign a value of one data type to another type</p>
+<p class = "indent">Unit test - developers create tests cases to cover all possible states and configurations of the software units in order to discover bugs</p>
+<p class = "indent">Facade - Structural Design pattern that provides a simpler unified interface to a more complex system</p>
+<p class = "indent">Method - a procedure associated with a message and an object</p>
+</body>
+
+{% endblock %}

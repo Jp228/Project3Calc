@@ -6,4 +6,4 @@ calculator.egg-info/SOURCES.txt
 calculator.egg-info/dependency_links.txt
 calculator.egg-info/top_level.txt
 tests/__init__.py
-tests/calculator_test.py
+tests/calculatortest.py

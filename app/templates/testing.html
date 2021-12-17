@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+        .important { color: #336699; }
+    </style>
+{% endblock %}
+{% block content %}
+    <body>
+
+<h2 class = "space">What is AAA testing?</h2>
+<p class = "indent">A test is an operation for software programs to determine if they are correct or not. There are more than one type of
+  tests for example; unit tests, integration tests and more but all of them report whether the program passes or fails.
+  AAA pattern stands for Arrange, Act and Assert.</p>
+<p class = "indent">The first step of the AAA pattern is Arrange which inputs and targets. Arrange steps set up the test case. Act calls
+  a function or method, calling a REST API, or interacting with a web page. Act targets on the behavior. Assertion is
+  the last step of the test. Assert steps tell the user if the function or method passed or failed. Depending on the
+  function, assertions may check simple things like numbers or string values. Assertion determines and tests if the
+  function or program failed or passed. </p>
+<p class = "indent">A simple example of AAA pattern testing is provided below. </p>
+
+<p>def test_abs_for_a_negative_number():</p>
+<ul># Arrange</ul>
+<li class = "indent">negative = -5</li>
+<ul># Act</ul>
+<li class = "indent">answer = abs(negative)</li>
+<ul># Assert</ul>
+<li class = "indent">assert answer == 5</li>
+
+</body>
+{% endblock %}
